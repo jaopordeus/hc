@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário 💖</title>
+  <style>
+    body {
+      background: #9accf8; /* Azul claro de fundo */
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      color: #003366; /* Cor escura para o texto */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #003366;
+    }
+
+    .photo-section {
+      margin-bottom: 50px;
+    }
+
+    .photo {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    button {
+      background: #0066cc; /* Azul mais escuro */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button:hover {
+      background: #004d99; /* Azul mais escuro ao passar o mouse */
+    }
+
+    .digitando {
+      min-height: 50px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    audio {
+      display: none;
+    }
+
+    /* Media Queries para responsividade */
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      .photo {
+        max-width: 100%;
+        height: auto;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+
+      .digitando {
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      button {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+
+      .digitando {
+        font-size: 14px;
+      }
+    }
+
+    /* Estilo para o rodapé com letras maiores */
+    .footer {
+      background-color: #0066cc; /* Azul mais escuro */
+      color: white;
+      padding: 30px;
+      font-size: 24px; /* Letra maior */
+      font-weight: bold;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Feliz Aniversário💌</h1>
+
+    <!-- Música em MP3 oculta -->
+    <audio id="musica" loop>
+      <source src="maria.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio em MP3.
+    </audio>
+    
+    <!-- Seções de fotos -->
+    <div class="photo-section">
+      <img src="foto1.jpg" alt="Foto especial" class="photo">
+      <button onclick="mostrarTexto('texto1')">Clique para ler ✨</button>
+      <p id="texto1" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto2.jpg" alt="Rindo Juntos" class="photo">
+      <button onclick="mostrarTexto('texto2')">Sorrisos compartilhados😁
+      </button>
+      <p id="texto2" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto3.jpg" alt="Momento juntos" class="photo">
+      <button onclick="mostrarTexto('texto3')">Momento especial 💞</button>
+      <p id="texto3" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto4.jpg" alt="Rindo juntos" class="photo">
+      <button onclick="mostrarTexto('texto4')">Mais um momento 💖</button>
+      <p id="texto4" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto5.jpg" alt="Na praia" class="photo">
+      <button onclick="mostrarTexto('texto5')"> Mude o Mundo 🌎</button>
+      <p id="texto5" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto6.jpg" alt="Caminhando juntos" class="photo">
+      <button onclick="mostrarTexto('texto6')"> Essa vibe! 🎉🎉</button>
+      <p id="texto6" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto7.jpg" alt="Abraço apertado" class="photo">
+      <button onclick="mostrarTexto('texto7')">Você comigo sempre 💕</button>
+      <p id="texto7" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto8.jpg" alt="Nosso lugar" class="photo">
+      <button onclick="mostrarTexto('texto8')">Arrebatadora</button>
+      <p id="texto8" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto9.jpg" alt="Festa com amigos" class="photo">
+      <button onclick="mostrarTexto('texto9')">Uaifai😂</button>
+      <p id="texto9" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto10.jpg" alt="Juntos na natureza" class="photo">
+      <button onclick="mostrarTexto('texto10')">Bó no Mac? 🍔</button>
+      <p id="texto10" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto11.jpg" alt="Jantar romântico" class="photo">
+      <button onclick="mostrarTexto('texto11')">O nosso servir!🕯️</button>
+      <p id="texto11" class="digitando"></p>
+    </div>
+
+    <div class="photo-section">
+      <img src="foto12.jpg" alt="Eu te Amo" class="photo">
+      <button onclick="mostrarTexto('texto12')">Te amo ao infinito e Além!💖
+      </button>
+      <p id="texto12" class="digitando"></p>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+      "You are my lobster"🦞
+    </div>
+
+  </div>
+
+  <script>
+    const textos = {
+      texto1: "Desde que te conheci, cada dia tem sido mais especial. Cada momento que vivemos juntos está gravado nas minhas memórias. Lembro até hoje da gente bem pequenininho e eu invadindo tua casa pra jogar GTA kkkkk! Tu sempre foi extremamente importante na minha vida… e espero que tu nunca esqueça disso!💕.",
+      texto2: "A nossa risada é a melhor melodia, e rir ao teu lado é uma das melhores sensações que já tive na vida! Então, continue sendo essa mulher alegre que és, que consegue ver o melhor em cada momento e que faz qualquer rolê contigo ser extremamente incrível! Sei que, às vezes, a vida fode com a gente, mas nunca deixe que nada tire essa alegria incrível que tu tens! 🫶🏿",
+      texto3: "Lembro desse dia como se fosse ontem, um dos muitos momentos incríveis que vivemos juntos. Mas esse, não sei por quê, me marcou muito. Eu amo viver esses momentos ao seu lado, porque você consegue torná-los inesquecíveis. A energia que você traz para cada instante é surreal. Nada é mais incrível do que estar ao seu lado. 💖",
+      texto4: "Mais um daqueles momentos inesquecíveis! E sobre esse aqui, eu tenho uma pergunta: quem colocou essa ideia na nossa cabeça? Kkkkkk. Mas, sinceramente, foi uma das ideias mais malucas e incríveis que tivemos. Ficamos todos assados ​​e doloridos por passar quatro horas em uma moto? Ficamos! Kkkkk. Mas cada segundo dessa viagem valeu extremamente a pena!  Na próxima, a gente vai de carro, né? Kkkkk. 🚗🤯",
+      texto5: "Bom… acho que nem preciso falar que tu vai mudar o mundo, né?! Eu admiro horrores o jeito como você ama esse curso, o quanto ele é importante pra ti, e como os teus olhinhos brilham quando fala qualquer coisinha sobre!    Recentemente, você começou o estágio e, bom, espero que seja incrível. No momento em que tô escrevendo tudo isso aqui, você só tinha visitado o local, mas no dia que me contou, teus olhos brilhavam de um jeito extraordinário. Era lindo de ver como você estava satisfeita e feliz, mesmo com toda a exaustão mental. Você faz o que ama!   E o que você ama é ajudar, é fazer o bem… Tenho certeza de que vai se tornar uma profissional incrível! No futuro, quando estiver ministrando suas aulas na universidade, os teus alunos vão olhar pra ti e te enxergar como o tipo de profissional que vale a pena seguir. Tenho muito orgulho de ti, e espero que você continue sempre fazendo o que ama!!",
+      texto6: "E essa tua vibe alegre, festeira e dançarina… completamente oposta do que eu era, né? Kkkkk. Mas, de alguma forma, tu me fez gostar de tudo isso, e eu já não tô vendo a hora do PP começar! Kkkkk.  Esse ano eu vou pelo menos uma vez, e garanto que não vou abrir a cabeça na véspera, tá? Kkkkkk.  Mas, de verdade, eu agradeço muito por ter me ajudado a entrar nessa vibe. Devo muito disso a você! Lembro das vezes em que tu me arrastou mesmo eu não querendo muito ir… mas, no fim, eu sempre acabava gostando. Kkkkk!😂😂",
+      texto7: "Falaaaaando em abrir a cabeça… Kkkkkkk! Essa memória não podia ficar de fora, né? Apesar de que eu não lembro de muita coisa msksksk! Só do frio desgraçado que eu passei! Mas com certeza esse foi um dos momentos mais assustadores que já vivi. E te ter ali foi extremamente crucial. Com certeza, tua presença fez com que aquele momento fosse mais tranquilo. Bom… pelo menos pra mim! Porque eu sei o quanto, no fundo, você estava apavorada e preocupada com tudo aquilo. Mas em nenhum momento você deixou transparecer, e isso fez com que eu me sentisse seguro. Obrigado por estar lá, por ser meu porto seguro e por ser — pra sempre — o meu contato de emergência. Se algo assim acontecer de novo, eu não pensaria em ligar pra mais ninguém antes de você… então é bom ir se preparando psicologicamente, tá? Kkkkk. Brincadeira, viu! 😂 Saiba que eu faria exatamente o mesmo por você. Pode me ligar sempre que precisar, independente da situação… mas, de preferência, não abre a cabeça, tá? A sensação não é tão legal, e dói quando faz frio! Kkkkk 😂😂😂😂",
+      texto8: " Não sei… mas essa foto me passa uma vibe taaaao confortável que, sei lá, às vezes só paro e fico olhando pra ela! Representa muito da tua energia… não sei explicar, mas essa foto me acalma.  Isso sem falar, é claro, da tua beleza imensurável, né? Mas não vamos entrar nesses detalhes, senão vou ficar até amanhã falando o quanto te acho linda, perfeita, maravilhosa, divina, esplêndida, radiante, encantadora, deslumbrante, arrebatadora, impressionante, fascinante, estonteante e simplesmente única!",
+      texto9: "Essa é da vez que fomos praquela igrejinha lá no Tambor. Ô lugarzinho longe! Kkkkk.  Nós fomos para um grupo de oração, ou algo assim , não lembro bem do que se tratava , mas lembro muito bem da gente rindo horrores com as fotos no Insta e eu escrevendo que lá não pegava ''uaifai'' kkkkkkk Esse dia foi muito bom! Assim que vi a foto, lembrei e pensei: hmmm, certeza que ela vai rir quando estiver lendo isso aqui. Então, se em algum dos 8 pontos anteriores ela tiver chorado, esse aqui vai fazer ela rir um pouquinho e se preparar pros próximos 4 ! Kkkkk. 🥰",
+      texto10: "Da série 'Coisinhas bobas que eu sinto falta': esses dias em que eu ia te buscar e eu ou você soltava um 'maczin maczin?' Kkkkkkk. E a gente dava mó voltão só pra comer um Mac kkkkk. Era muito bom!  E, sinceramente, acho que deveríamos fazer isso novamente, viu? Sempre rendia boas conversas… ou simplesmente um momento de silêncio e conforto, comendo nossa comida de consolo. Kkkk! Obrigado por me permitir viver momentos assim ao teu lado. Eu amo cada uma dessas memórias! 💛",
+      texto11: "Quando vi isso, eu pensei: Meu Deus, quanto tempo essa foto tem??? E ao mesmo tempo vieram taaaantas memórias que é impossível citar cada uma delas!  Vivemos tanto esse servir lindo e maravilhoso, e eu fico extremamente feliz de poder ter vivido todas essas experiências incríveis ao teu lado. As incontáveis Via-Sacras que a gente terminava com as mãos sangrando ksksksk (hoje em dia a vida desses coroinhas tá muito fácil, né? No nosso tempo era o tempo todo tocando as sinetas ksksksk), as vigílias, missas, procissões, reuniões... Tudo que vivemos juntos  e individualmente nessa missão foi extremamente lindo. Quando eu vi essa foto, senti que você precisava reviver essas memórias, então eu não podia deixar de colocar isso no seu presente! ✨🤍",
+      texto12: "E pra finalizar, eu não podia deixar de falar o quanto eu te amo! É simplesmente impossível mensurar o tamanho do amor que eu sinto por você, o quanto admiro quem tu és e quem tu ainda vai ser! Tua vida tá só começando, e eu tenho absoluta certeza de que cê vai se tornar uma mulher ainda mais incrível do que já és. E de uma coisa tu pode ter certeza: eu sempre estarei lá pra te aplaudir e demonstrar o quanto estou orgulhoso de você! Também estarei aqui nos momentos difíceis, não esquece disso. Você pode contar comigo pra qualquer coisa. A vida pode até nos dar destinos diferentes, mas você sempre será meu primeiro, único e verdadeiro amor. Eu te amei ontem, te amo hoje e vou te amar pra todo sempre!"
+    };
+
+    let musicaTocando = false;
+
+    function mostrarTexto(id) {
+      const elemento = document.getElementById(id);
+      const texto = textos[id];
+      let i = 0;
+      elemento.innerHTML = ""; // Limpa texto anterior
+
+      // Toca a música se ainda não tiver tocado
+      if (!musicaTocando) {
+        const audio = document.getElementById("musica");
+        audio.play().catch(e => console.log("Autoplay bloqueado:", e));
+        musicaTocando = true;
+      }
+
+      const intervalo = setInterval(() => {
+        if (i < texto.length) {
+          elemento.innerHTML += texto.charAt(i);
+          i++;
+        } else {
+          clearInterval(intervalo);
+        }
+      }, 50); // velocidade da digitação
+    }
+  </script>
+</body>
+</html>
